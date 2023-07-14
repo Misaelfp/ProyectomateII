@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Optimización de Costos</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Optimización de Costos - Approving With Faith</h1>
+    <p class="description">Approving With Faith es una empresa líder en la fabricación de muebles de alta calidad. Su objetivo principal es optimizar los costos de producción para ofrecer productos competitivos en el mercado.</p>
+    <p class="description">Utiliza el formulario a continuación para ingresar la cantidad de materiales y horas de mano de obra para calcular el costo total de producción.</p>
+    <div class="form-group">
+      <label for="materialA">Cantidad de Material A:</label>
+      <input type="number" id="materialA" placeholder="Cantidad de Material A" onchange="calcularCosto()">
+    </div>
+    <div class="form-group">
+      <label for="materialB">Cantidad de Material B:</label>
+      <input type="number" id="materialB" placeholder="Cantidad de Material B" onchange="calcularCosto()">
+    </div>
+    <div class="form-group">
+      <label for="materialC">Cantidad de Material C:</label>
+      <input type="number" id="materialC" placeholder="Cantidad de Material C" onchange="calcularCosto()">
+    </div>
+    <div class="form-group">
+      <label for="manoDeObra">Horas de Mano de Obra:</label>
+      <input type="number" id="manoDeObra" placeholder="Horas de Mano de Obra" onchange="calcularCosto()">
+    </div>
+    <button type="button" onclick="calcularCosto()">Calcular Costo</button>
+    <div class="chart-container">
+      <canvas id="grafico1"></canvas>
+      <canvas id="grafico2"></canvas>
+    </div>
+    <div id="resultado"></div>
+    <div class="table-description">
+      <p>El gráfico de barras muestra el costo unitario por cada material y la mano de obra.</p>
+      <p>El gráfico de línea muestra la relación entre el costo total de producción y el índice de producción.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
